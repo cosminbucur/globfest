@@ -1,0 +1,19 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header";
+import Hero from "../../components/Hero";
+import About from "../../components/About";
+import Products from "../../components/Products";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
+import { ro } from "../../i18n/ro";
+---
+
+<MainLayout>
+  <Header t={ro} />
+  <Hero t={ro} />
+  <About t={ro} />
+  <Products t={ro} />
+  <Contact t={ro} />
+  <Footer />
+</MainLayout>
