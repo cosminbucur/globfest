@@ -1,10 +1,25 @@
 ---
 import "../styles/globals.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Globfest - Christmas Magic", description = "Your one-stop shop for festive cheer" } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <body class="bg-white text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
     <slot />
   </body>
 </html>
