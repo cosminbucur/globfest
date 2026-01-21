@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from 'iconoir-react';
+import { Facebook, Instagram, Youtube } from 'iconoir-react';
 
 export default function Footer({ t }: { t: any }) {
   const currentYear = new Date().getFullYear();
@@ -23,6 +23,15 @@ export default function Footer({ t }: { t: any }) {
           aria-label="Instagram"
         >
           <Instagram className="w-6 h-6" />
+        </a>
+        <a
+          href="https://www.youtube.com/@Globfest"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-red-600 transition-colors duration-300"
+          aria-label="YouTube"
+        >
+          <Youtube className="w-6 h-6" />
         </a>
       </div>
       <p className="text-sm text-gray-500 font-light">
