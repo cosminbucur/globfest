@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 type Props = {
   t: any;
 };
@@ -14,12 +16,11 @@ export default function Header({ t }: Props) {
           <a href="#contact">{t.nav.contact}</a>
         </nav>
 
-        <a
-          href="#products"
-          className="bg-christmas-red text-white px-5 py-2 rounded-full hover:bg-christmas-green transition"
-        >
-          {t.nav.cta}
-        </a>
+        <Button asChild className="bg-christmas-red hover:bg-christmas-green text-white rounded-full">
+          <a href="#products">
+            {t.nav.cta}
+          </a>
+        </Button>
       </div>
     </header>
   );

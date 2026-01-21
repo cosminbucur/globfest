@@ -18,12 +18,22 @@ Components:
 # setup
 
 ```sh
+# setup project with tailwind
 pnpm create astro@latest globfest
 cd globfest
 pnpm install
 pnpm add -D tailwindcss postcss autoprefixer
 pnpm astro add tailwind
 
+# react
 pnpm astro add react
+
+# shadcn
+NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm dlx shadcn@latest init -y
+NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm dlx shadcn@latest add button -y
+NODE_TLS_REJECT_UNAUTHORIZED=0 pnpm dlx shadcn@latest add input -y
+
+# icons
 pnpm add iconoir-react
+
 ```

@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Products({ t }: any) {
   return (
     <section id="products" className="py-24 bg-gray-50 px-6">
@@ -17,12 +19,11 @@ export default function Products({ t }: any) {
           ))}
         </div>
 
-        <a
-          href="#contact"
-          className="bg-christmas-green text-white px-8 py-3 rounded-full"
-        >
-          {t.products.cta}
-        </a>
+        <Button asChild className="bg-christmas-green hover:bg-christmas-red text-white px-8 h-12 rounded-full">
+          <a href="#contact">
+            {t.products.cta}
+          </a>
+        </Button>
       </div>
     </section>
   );
