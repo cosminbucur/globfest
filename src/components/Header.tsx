@@ -9,7 +9,7 @@ export default function Header({ t, currentLang = "en" }: Props) {
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href={currentLang === "en" ? "/" : "/ro"} className="text-2xl font-bold text-christmas-red hover:opacity-80 transition-opacity">
+        <a href={currentLang === "en" ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}ro`} className="text-2xl font-bold text-christmas-red hover:opacity-80 transition-opacity">
           Globfest
         </a>
 
@@ -23,7 +23,7 @@ export default function Header({ t, currentLang = "en" }: Props) {
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-gray-50 border border-gray-100 rounded-full p-1">
             <a
-              href="/"
+              href={import.meta.env.BASE_URL}
               className={`px-3 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
                 currentLang === "en"
                   ? "bg-white text-christmas-red shadow-sm ring-1 ring-black/5"
@@ -33,7 +33,7 @@ export default function Header({ t, currentLang = "en" }: Props) {
               EN
             </a>
             <a
-              href="/ro"
+              href={`${import.meta.env.BASE_URL}ro`}
               className={`px-3 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
                 currentLang === "ro"
                   ? "bg-white text-christmas-red shadow-sm ring-1 ring-black/5"

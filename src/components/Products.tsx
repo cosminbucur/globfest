@@ -15,7 +15,7 @@ export default function Products({ t }: any) {
             >
               <div className="aspect-square relative overflow-hidden">
                 <img
-                  src={product.image}
+                  src={product.image.startsWith("/") ? `${import.meta.env.BASE_URL}${product.image.slice(1)}` : product.image}
                   alt={product.title}
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 />

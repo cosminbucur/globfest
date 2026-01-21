@@ -8,8 +8,8 @@ export default function Causes({ t }: any) {
   const causes = causeIds.map(id => ({
     id,
     ...t.causes.items[id],
-    image: `/images/causes/${id}.png`,
-    logo: `/images/causes/${id}-logo.png`,
+    image: `${import.meta.env.BASE_URL}images/causes/${id}.png`,
+    logo: `${import.meta.env.BASE_URL}images/causes/${id}-logo.png`,
   }));
 
   return (
