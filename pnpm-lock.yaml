@@ -23,6 +23,9 @@ importers:
       astro:
         specifier: ^5.16.9
         version: 5.16.9(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.55.1)(typescript@5.9.3)
+      iconoir-react:
+        specifier: ^7.11.0
+        version: 7.11.0(react@19.2.3)
       react:
         specifier: ^19.2.3
         version: 19.2.3
@@ -1121,6 +1124,11 @@ packages:
 
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
+
+  iconoir-react@7.11.0:
+    resolution: {integrity: sha512-uvTKtnHYwbbTsmQ6HCcliYd50WK0GbjP497RwdISxKzfS01x4cK1Mn/F2mT/t2roSaJQ0I+KnHxMcyvmNMXWsQ==}
+    peerDependencies:
+      react: 18 || 19
 
   import-meta-resolve@4.2.0:
     resolution: {integrity: sha512-Iqv2fzaTQN28s/FwZAoFq0ZSs/7hMAHJVX+w8PZl3cY19Pxk6jFFalxQoIfW2826i/fDLXv8IiEZRIT0lDuWcg==}
@@ -3005,6 +3013,10 @@ snapshots:
   html-void-elements@3.0.0: {}
 
   http-cache-semantics@4.2.0: {}
+
+  iconoir-react@7.11.0(react@19.2.3):
+    dependencies:
+      react: 19.2.3
 
   import-meta-resolve@4.2.0: {}
 

@@ -25,5 +25,5 @@ pnpm add -D tailwindcss postcss autoprefixer
 pnpm astro add tailwind
 
 pnpm astro add react
-
+pnpm add iconoir-react
 ```

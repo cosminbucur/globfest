@@ -34,4 +34,7 @@ export const ro = {
     loading: "Se trimite...",
     success: "Bun venit în familia Globfest!",
   },
+  footer: {
+    rights: "Toate drepturile rezervate.",
+  },
 };

@@ -34,4 +34,7 @@ export const en = {
     loading: "Sending...",
     success: "Welcome to the Globfest family!",
   },
+  footer: {
+    rights: "All rights reserved.",
+  },
 };
