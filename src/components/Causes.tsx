@@ -72,14 +72,14 @@ export default function Causes({ t }: any) {
                     rel="noopener noreferrer"
                     className="text-xs font-bold text-christmas-green hover:text-christmas-red transition-colors flex items-center gap-1.5 uppercase tracking-wider"
                   >
-                    Site Web
+                    {t.causes.viewWebsite}
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
                   
                   <Button variant="ghost" className="rounded-full text-xs font-bold uppercase tracking-widest text-christmas-red hover:bg-christmas-red hover:text-white transition-all duration-300">
-                    Detalii
+                    {t.causes.details}
                   </Button>
                 </div>
               </div>

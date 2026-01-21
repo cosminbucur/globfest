@@ -7,17 +7,19 @@ interface Props {
   title?: string;
   description?: string;
   t: any;
+  lang?: string;
 }
 
 const { 
   title = "Globfest - Christmas Magic", 
   description = "Your one-stop shop for festive cheer",
-  t
+  t,
+  lang = "en"
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

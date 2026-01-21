@@ -41,6 +41,8 @@ export const ro = {
   causes: {
     title: "Globuri cu Scop",
     subtitle: "Fiecare achiziție sprijină o cauză nobilă. Împreună, putem face sărbătorile mai luminoase pentru toți.",
+    viewWebsite: "Site Web",
+    details: "Detalii",
     items: {
       posta: {
         title: "Biserica Sf. Dumitru Poștă",

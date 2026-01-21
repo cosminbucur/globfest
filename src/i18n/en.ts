@@ -41,6 +41,8 @@ export const en = {
   causes: {
     title: "Baubles with Purpose",
     subtitle: "Every purchase supports a cause close to our hearts. Together, we can make the holiday season brighter for everyone.",
+    viewWebsite: "Visit Website",
+    details: "Details",
     items: {
       posta: {
         title: "Sf. Dumitru Poștă Church",
