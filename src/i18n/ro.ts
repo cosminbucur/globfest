@@ -26,4 +26,12 @@ export const ro = {
     subtitle: "Întrebări, comenzi personalizate sau colaborări?",
     cta: "Contactează-ne",
   },
+  newsletter: {
+    title: "Alătură-te Magiei de Sărbători",
+    subtitle: "Abonează-te la newsletter-ul nostru și primește sfaturi exclusive pentru sărbători, acces timpuriu la colecții și inspirație pictată manual.",
+    placeholder: "Adresa ta de email",
+    cta: "Abonează-te Acum",
+    loading: "Se trimite...",
+    success: "Bun venit în familia Globfest!",
+  },
 };

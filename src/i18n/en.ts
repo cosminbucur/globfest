@@ -26,4 +26,12 @@ export const en = {
     subtitle: "Questions, custom orders, or collaborations?",
     cta: "Contact Us",
   },
+  newsletter: {
+    title: "Join the Festive Magic",
+    subtitle: "Sign up for our newsletter and get exclusive holiday tips, early collection access, and hand-painted inspiration.",
+    placeholder: "Your email address",
+    cta: "Subscribe Now",
+    loading: "Sending...",
+    success: "Welcome to the Globfest family!",
+  },
 };

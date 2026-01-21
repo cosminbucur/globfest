@@ -1,12 +1,19 @@
 ---
 import "../styles/globals.css";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 interface Props {
   title?: string;
   description?: string;
+  t: any;
 }
 
-const { title = "Globfest - Christmas Magic", description = "Your one-stop shop for festive cheer" } = Astro.props;
+const { 
+  title = "Globfest - Christmas Magic", 
+  description = "Your one-stop shop for festive cheer",
+  t
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -19,7 +26,9 @@ const { title = "Globfest - Christmas Magic", description = "Your one-stop shop 
     <title>{title}</title>
     <meta name="description" content={description} />
   </head>
-  <body class="bg-white text-gray-800 antialiased">
+  <body class="bg-white text-gray-800 antialiased font-sans">
     <slot />
+    <Newsletter t={t} client:load />
+    <Footer />
   </body>
 </html>
