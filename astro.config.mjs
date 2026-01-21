@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://cosminbucur.github.io",
-  base: "/globfest",
+  base: "/globfest/",
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
