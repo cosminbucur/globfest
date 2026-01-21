@@ -11,9 +11,10 @@ export default function Header({ t }: Props) {
         <span className="text-2xl font-bold text-christmas-red">Globfest</span>
 
         <nav className="hidden md:flex gap-6">
-          <a href="#about">{t.nav.about}</a>
-          <a href="#products">{t.nav.products}</a>
-          <a href="#contact">{t.nav.contact}</a>
+          <a href="#about" className="hover:text-christmas-red transition-colors">{t.nav.about}</a>
+          <a href="#products" className="hover:text-christmas-red transition-colors">{t.nav.products}</a>
+          <a href="#causes" className="hover:text-christmas-red transition-colors">{t.nav.causes}</a>
+          <a href="#contact" className="hover:text-christmas-red transition-colors">{t.nav.contact}</a>
         </nav>
 
         <Button asChild className="bg-christmas-red hover:bg-christmas-green text-white rounded-full">

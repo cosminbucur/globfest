@@ -2,6 +2,7 @@ export const en = {
   nav: {
     about: "About",
     products: "Products",
+    causes: "Purpose",
     contact: "Contact",
     cta: "Shop Now",
   },
@@ -36,5 +37,31 @@ export const en = {
   },
   footer: {
     rights: "All rights reserved.",
+  },
+  causes: {
+    title: "Baubles with Purpose",
+    subtitle: "Every purchase supports a cause close to our hearts. Together, we can make the holiday season brighter for everyone.",
+    items: {
+      posta: {
+        title: "Sf. Dumitru Poștă Church",
+        description: "A spiritual oasis in the heart of Bucharest, actively involved in educational and social projects for youth and the elderly.",
+        website: "https://sfantuldumitruposta.ro/",
+      },
+      tadeu: {
+        title: "Tadeu Humanitarian Association",
+        description: "A mission dedicated to education through the 'Adopt a Dream' program, offering equal opportunities to children from disadvantaged backgrounds.",
+        website: "https://asociatiatadeu.ro/",
+      },
+      aspera: {
+        title: "Aspera Center",
+        description: "Vital support for children with autism and special needs through innovative therapies and dedicated family support.",
+        website: "https://centrul-aspera.ro/",
+      },
+      copaceni: {
+        title: "Adunații-Copăceni Church",
+        description: "A community that transforms faith into action by constantly supporting families and the elderly in Giurgiu county.",
+        website: "https://adunati-copaceni.biserica.ro/",
+      },
+    },
   },
 };
