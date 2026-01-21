@@ -7,14 +7,25 @@ export default function Products({ t }: any) {
         <h2 className="text-3xl font-bold mb-2">{t.products.title}</h2>
         <p className="mb-10">{t.products.subtitle}</p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
-          {[1, 2, 3].map((i) => (
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {t.products.items.map((product: any, i: number) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+              className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
             >
-              <div className="h-40 bg-gray-200 rounded mb-4" />
-              <h3 className="font-semibold">Hand Painted Bauble</h3>
+              <div className="aspect-square relative overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-christmas-red transition-colors">
+                  {product.title}
+                </h3>
+              </div>
             </div>
           ))}
         </div>

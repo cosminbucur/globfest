@@ -21,6 +21,20 @@ export const ro = {
     title: "Colecția Noastră de Crăciun",
     subtitle: "Ediție limitată de globuri pictate manual",
     cta: "Vezi Toate Produsele",
+    items: [
+      {
+        title: "Albastru Celest",
+        image: "/images/baubles/babule1.jpeg",
+      },
+      {
+        title: "Căldură Pământească",
+        image: "/images/baubles/bauble2.jpeg",
+      },
+      {
+        title: "Steaua Aurie",
+        image: "/images/baubles/bauble3.jpeg",
+      },
+    ],
   },
   contact: {
     title: "Hai să Creăm Ceva Magic",
@@ -59,10 +73,10 @@ export const ro = {
         description: "Sprijin vital pentru copiii cu autism și nevoi speciale prin terapii inovatoare și suport dedicat familiilor acestora.",
         website: "https://centrul-aspera.ro/",
       },
-      copaceni: {
-        title: "Biserica Adunații-Copăceni",
+      serafim: {
+        title: "Parohia Sf. Serafim de Sarov - Cămineasca",
         description: "O comunitate care transformă credința în fapte, prin sprijinirea constantă a familiilor și bătrânilor din județul Giurgiu.",
-        website: "https://adunati-copaceni.biserica.ro/",
+        website: "https://parohiasfserafimdesarov.ro/",
       },
     },
   },

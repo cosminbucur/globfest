@@ -21,6 +21,20 @@ export const en = {
     title: "Our Christmas Collection",
     subtitle: "Limited edition, hand-painted ornaments",
     cta: "View All Products",
+    items: [
+      {
+        title: "Celestial Blue",
+        image: "/images/baubles/babule1.jpeg",
+      },
+      {
+        title: "Earthy Warmth",
+        image: "/images/baubles/bauble2.jpeg",
+      },
+      {
+        title: "Golden Star",
+        image: "/images/baubles/bauble3.jpeg",
+      },
+    ],
   },
   contact: {
     title: "Let’s Create Something Magical",
@@ -45,7 +59,7 @@ export const en = {
     details: "Details",
     items: {
       posta: {
-        title: "Sf. Dumitru Poștă Church",
+        title: "St. Dumitru Poștă Church",
         description: "A spiritual oasis in the heart of Bucharest, actively involved in educational and social projects for youth and the elderly.",
         website: "https://sfantuldumitruposta.ro/",
       },
@@ -59,10 +73,10 @@ export const en = {
         description: "Vital support for children with autism and special needs through innovative therapies and dedicated family support.",
         website: "https://centrul-aspera.ro/",
       },
-      copaceni: {
-        title: "Adunații-Copăceni Church",
+      serafim: {
+        title: "St. Serafim of Sarov - Cămineasca Parish",
         description: "A community that transforms faith into action by constantly supporting families and the elderly in Giurgiu county.",
-        website: "https://adunati-copaceni.biserica.ro/",
+        website: "https://parohiasfserafimdesarov.ro/",
       },
     },
   },

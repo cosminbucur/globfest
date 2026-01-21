@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Causes({ t }: any) {
   const [imgErrors, setImgErrors] = useState<Record<string, boolean>>({});
-  const causeIds = ["posta", "tadeu", "aspera", "copaceni"];
+  const causeIds = ["posta", "tadeu", "aspera", "serafim"];
   
   const causes = causeIds.map(id => ({
     id,
