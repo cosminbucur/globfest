@@ -17,14 +17,14 @@ const t = en;
 ---
 
 <MainLayout t={t} title={`${article.title} - ${t.blog.title}`}>
-  <Header t={t} currentLang="en" client:load />
+  <Header t={t} currentLang="en" pathname={Astro.url.pathname} client:load />
   
   <main class="pt-24 min-h-screen bg-white">
     {/* Article Hero */}
     <article>
         <header class="container mx-auto px-4 pt-12 max-w-4xl">
             <a 
-                href="/globfest/blog" 
+                href={`${import.meta.env.BASE_URL}blog`} 
                 class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-christmas-red transition-colors mb-8 group"
             >
                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />

@@ -9,7 +9,7 @@ const t = en;
 ---
 
 <MainLayout t={t} title={`Blog - ${t.blog.title}`}>
-  <Header t={t} currentLang="en" client:load />
+  <Header t={t} currentLang="en" pathname={Astro.url.pathname} client:load />
   
   <main class="pt-24 min-h-screen bg-gray-50/30">
     {/* Hero Section */}

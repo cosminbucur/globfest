@@ -8,7 +8,7 @@ const t = ro;
 ---
 
 <MainLayout t={t} title={`Blog - ${t.blog.title}`} lang="ro">
-  <Header t={t} currentLang="ro" client:load />
+  <Header t={t} currentLang="ro" pathname={Astro.url.pathname} client:load />
   
   <main class="pt-24 min-h-screen bg-gray-50/30">
     <section class="bg-white border-b border-gray-100 py-16 md:py-24">
