@@ -1,0 +1,114 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header";
+import { en } from "../i18n/en";
+import { ro } from "../i18n/ro";
+import { Button } from "@/components/ui/button";
+
+const pathname = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
+const roPrefix = `${base}ro/`.replace(/\/\//g, "/");
+const isRo = pathname.startsWith(roPrefix);
+const t = isRo ? ro : en;
+const lang = isRo ? "ro" : "en";
+const homeUrl = isRo ? roPrefix : base;
+
+const title = "404 - " + t.notFound.title;
+---
+
+<MainLayout t={t} title={title} lang={lang}>
+  <Header t={t} currentLang={lang} pathname={pathname} client:load />
+  
+  <main class="min-h-[70vh] flex items-center justify-center pt-24 pb-12 px-6 relative overflow-hidden">
+    <div class="snow-container">
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+    </div>
+    <div class="max-w-2xl w-full text-center space-y-8 animate-in fade-in slide-in-from-bottom-5 duration-1000 z-10">
+      <div class="relative inline-block">
+        <span class="text-[12rem] font-black text-christmas-red/10 select-none">404</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-7xl md:text-8xl transform -rotate-12 animate-bounce">
+            🦌
+          </div>
+        </div>
+      </div>
+      
+      <div class="space-y-4">
+        <h1 class="text-3xl md:text-5xl font-bold text-christmas-red">
+          {t.notFound.title}
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-lg mx-auto leading-relaxed">
+          {t.notFound.subtitle}
+        </p>
+      </div>
+
+      <div class="pt-4">
+        <Button asChild className="bg-christmas-green hover:bg-christmas-green/90 text-white px-8 h-12 rounded-full font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg">
+          <a href={homeUrl}>
+            {t.notFound.cta}
+          </a>
+        </Button>
+      </div>
+
+      <div class="flex justify-center gap-4 text-christmas-gold">
+         <span class="animate-pulse">✨</span>
+         <span class="animate-pulse delay-75">❄️</span>
+         <span class="animate-pulse delay-150">🎄</span>
+         <span class="animate-pulse delay-300">❄️</span>
+         <span class="animate-pulse delay-500">✨</span>
+      </div>
+    </div>
+  </main>
+</MainLayout>
+
+<style>
+  main {
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(15, 61, 46, 0.03) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(139, 30, 30, 0.03) 0%, transparent 40%);
+  }
+
+  .snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+
+  /* Generating some snowflakes */
+  .snowflake:nth-child(1) { left: 10%; width: 4px; height: 4px; animation: fall 5s linear infinite; }
+  .snowflake:nth-child(2) { left: 20%; width: 6px; height: 6px; animation: fall 7s linear infinite; animation-delay: 2s; }
+  .snowflake:nth-child(3) { left: 30%; width: 3px; height: 3px; animation: fall 4s linear infinite; animation-delay: 1s; }
+  .snowflake:nth-child(4) { left: 40%; width: 5px; height: 5px; animation: fall 6s linear infinite; animation-delay: 3s; }
+  .snowflake:nth-child(5) { left: 50%; width: 4px; height: 4px; animation: fall 5s linear infinite; animation-delay: 0.5s; }
+  .snowflake:nth-child(6) { left: 60%; width: 7px; height: 7px; animation: fall 8s linear infinite; animation-delay: 4s; }
+  .snowflake:nth-child(7) { left: 70%; width: 3px; height: 3px; animation: fall 4s linear infinite; animation-delay: 2.5s; }
+  .snowflake:nth-child(8) { left: 80%; width: 5px; height: 5px; animation: fall 6s linear infinite; animation-delay: 1.5s; }
+  .snowflake:nth-child(9) { left: 90%; width: 4px; height: 4px; animation: fall 5s linear infinite; animation-delay: 4.5s; }
+</style>

@@ -154,4 +154,9 @@ export const en = {
       },
     ],
   },
+  notFound: {
+    title: "Oops! Sleigh Off Track",
+    subtitle: "It seems this page has fallen off Santa's sleigh or was eaten by a hungry reindeer. Even the elves couldn't find it!",
+    cta: "Back to Christmas Magic",
+  },
 };

@@ -154,4 +154,9 @@ export const ro = {
       },
     ],
   },
+  notFound: {
+    title: "Ups! Sania a Ieșit de pe Traseu",
+    subtitle: "Se pare că această pagină a căzut din sania lui Moș Crăciun sau a fost mâncată de un ren flămând. Nici măcar spiridușii nu o găsesc!",
+    cta: "Înapoi la Magia Crăciunului",
+  },
 };
