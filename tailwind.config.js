@@ -9,6 +9,9 @@ export default {
           gold: "#D4AF37",
         },
       },
+      fontFamily: {
+        sans: ["Outfit", "sans-serif"],
+      },
     },
   },
   plugins: [],

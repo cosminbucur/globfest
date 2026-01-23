@@ -1,0 +1,15 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header";
+import AboutPage from "../../components/AboutPage";
+import { ro } from "../../i18n/ro";
+
+const pathname = Astro.url.pathname;
+---
+
+<MainLayout t={ro} title="Despre Noi | Globfest">
+  <Header t={ro} currentLang="ro" pathname={pathname} client:load />
+  <main>
+    <AboutPage t={ro} lang="ro" client:load />
+  </main>
+</MainLayout>

@@ -17,6 +17,10 @@ export const ro = {
     subtitle:
       "Fiecare glob este pictat individual, transformându-l într-o piesă unică.",
     cta: "Află Mai Mult",
+    storyTitle: "Povestea Noastră",
+    storyContent: "La Globfest, călătoria noastră a început cu o credință simplă: aceea că ornamentele pe care le agățăm în brad ar trebui să fie la fel de unice ca amintirile pe care le creăm în timpul sărbătorilor. Ceea ce a început ca un mic proiect de pasiune într-un atelier de acasă s-a transformat într-o comunitate dedicată păstrării meșteșugului artizanal al pictării manuale a globurilor din sticlă.\n\nFiecare glob din colecția noastră este rezultatul muncii cu dragoste. Nu credem în producția de masă; în schimb, celebrăm micile imperfecțiuni și variații care vin dintr-o mână umană ce ține o pensulă. Artiștii noștri petrec ore întregi pe fiecare piesă, inspirându-se atât din tradițiile atemporale ale Crăciunului, cât și din frumusețea subtilă a naturii.\n\nDar Globfest este mai mult decât o simplă decorațiune. Am fondat acest proiect cu misiunea de a oferi ceva înapoi. De aceea, o parte din fiecare vânzare merge direct către susținerea unor cauze care fac o diferență reală în viața oamenilor—de la centre comunitare locale la organizații care ajută copiii cu nevoi speciale. Credem că adevărata magie a sărbătorilor se găsește în actul de a dărui și de a împărtăși căldură cu ceilalți.\n\nCând alegi un glob Globfest, nu cumperi doar un ornament; susții un artist, contribui la o cauză semnificativă și aduci o piesă de măiestrie autentică în casa ta. Suntem onorați să facem parte din tradițiile festive ale familiei tale și așteptăm cu nerăbdare să adăugăm un strop de magie pictată manual sărbătorilor tale pentru mulți ani de acum încolo.",
+    visitTitle: "Vrei să vezi magia îndeaproape?",
+    visitSubtitle: "Atelierul nostru este un spațiu al creativității și al spiritului festiv. Ne-ar plăcea să îți arătăm cum creăm fiecare glob cu pasiune.",
   },
   products: {
     title: "Colecția Noastră de Crăciun",
