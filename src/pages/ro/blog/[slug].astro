@@ -1,0 +1,90 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import Header from "../../../components/Header";
+import { ro } from "../../../i18n/ro";
+import { Clock, ArrowLeft } from "lucide-react";
+
+export function getStaticPaths() {
+  const { blog } = ro;
+  return blog.articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const t = ro;
+---
+
+<MainLayout t={t} title={`${article.title} - ${t.blog.title}`} lang="ro">
+  <Header t={t} currentLang="ro" client:load />
+  
+  <main class="pt-24 min-h-screen bg-white">
+    <article>
+        <header class="container mx-auto px-4 pt-12 max-w-4xl">
+            <a 
+                href="/globfest/ro/blog" 
+                class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-christmas-red transition-colors mb-8 group"
+            >
+                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                Înapoi la Blog
+            </a>
+            
+            <div class="flex items-center gap-4 mb-6">
+                <span class="px-3 py-1 text-xs font-bold bg-christmas-red/10 text-christmas-red rounded-full tracking-wider uppercase">
+                    {article.category}
+                </span>
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                    <Clock className="w-4 h-4" />
+                    <span>{article.readTime} min lectură</span>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-8">
+                {article.title}
+            </h1>
+
+            <div class="flex items-center gap-6 pb-12 border-b border-gray-100 mb-12">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-christmas-red/5 flex items-center justify-center text-christmas-red font-bold">
+                        G
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-gray-900">Echipa Globfest</p>
+                        <p class="text-xs text-gray-500 font-medium">23 Ian, 2026</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container mx-auto px-4 max-w-4xl mb-12">
+            <img 
+                src={article.image} 
+                alt={article.title} 
+                class="w-full aspect-video object-cover rounded-3xl shadow-2xl mb-12"
+            />
+            
+            <div class="prose prose-lg max-w-none text-gray-600 leading-relaxed">
+                <p class="text-xl text-gray-900 font-medium mb-8">
+                    {article.description}
+                </p>
+                
+                <p>
+                    Acesta este un text de umplutură. În curând vom publica articolul complet despre această temă fascinantă legată de magia Crăciunului și arta globurilor pictate manual.
+                </p>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 my-12 border-l-4 border-christmas-red">
+                    <p class="italic text-gray-700 text-lg">
+                        "Fiecare glob creat de noi poartă cu el o fărâmă din magia sărbătorilor și pasiunea artiștilor noștri."
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Explorând Detaliile</h2>
+                <p>
+                    Suntem dedicați păstrării tradițiilor în timp ce aducem un suflu modern fiecărui design. Te invităm să urmărești jurnalul nostru pentru mai multe noutăți.
+                </p>
+            </div>
+        </div>
+    </article>
+  </main>
+</MainLayout>
