@@ -10,7 +10,7 @@ import { ro } from "../../i18n/ro";
 ---
 
 <MainLayout t={ro} lang="ro">
-  <Header t={ro} currentLang="ro" pathname={Astro.url.pathname} />
+  <Header t={ro} currentLang="ro" pathname={Astro.url.pathname} client:load />
   <Hero t={ro} />
   <About t={ro} />
   <Products t={ro} />

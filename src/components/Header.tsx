@@ -11,29 +11,36 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
   
   // Helper to get localized links
   const getLocalizedPath = (lang: "en" | "ro") => {
-    // If no pathname is provided (e.g. initial server render without prop), 
-    // fall back to base paths
+    // If no pathname is provided, fall back to base paths
     if (!pathname) {
-      return lang === "en" ? base : `${base}ro`;
+      return lang === "en" ? base : `${base}ro/`.replace(/\/\//g, "/");
     }
 
+    if (lang === currentLang) return pathname;
+
+    const roPrefix = `${base}ro/`.replace(/\/\//g, "/");
+
     if (lang === "en") {
-      // If we're on a RO page, remove/ro/ from the path
-      if (currentLang === "ro") {
-        return pathname.replace(`${base}ro`, base).replace(/\/\//g, "/");
-      }
-      return pathname;
+      // If we're on a RO page, remove /ro/ from the path
+      return pathname.replace(roPrefix, base).replace(/\/\//g, "/");
     } else {
       // If we're on an EN page, add /ro/ after base
-      if (currentLang === "en") {
-        return pathname.replace(base, `${base}ro/`).replace(/\/\//g, "/");
-      }
-      return pathname;
+      return pathname.replace(base, roPrefix).replace(/\/\//g, "/");
     }
   };
 
-  const blogPath = currentLang === "ro" ? `${base}ro/blog` : `${base}blog`;
-  const homePath = currentLang === "ro" ? `${base}ro` : base;
+  const handleLanguageClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    if (hash) {
+      // Prevent default to manually handle navigation with hash
+      e.preventDefault();
+      const targetUrl = e.currentTarget.href.split('#')[0] + hash;
+      window.location.href = targetUrl;
+    }
+  };
+
+  const homePath = currentLang === "ro" ? `${base}ro/`.replace(/\/\//g, "/") : base;
+  const blogPath = (currentLang === "ro" ? `${base}ro/blog/` : `${base}blog/`).replace(/\/\//g, "/");
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
@@ -54,6 +61,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
           <div className="flex items-center bg-gray-50 border border-gray-100 rounded-full p-1">
             <a
               href={getLocalizedPath("en")}
+              onClick={handleLanguageClick}
               className={`px-3 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
                 currentLang === "en"
                   ? "bg-white text-christmas-red shadow-sm ring-1 ring-black/5"
@@ -64,6 +72,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
             </a>
             <a
               href={getLocalizedPath("ro")}
+              onClick={handleLanguageClick}
               className={`px-3 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
                 currentLang === "ro"
                   ? "bg-white text-christmas-red shadow-sm ring-1 ring-black/5"

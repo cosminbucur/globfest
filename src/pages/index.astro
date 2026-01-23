@@ -10,7 +10,7 @@ import { en } from "../i18n/en";
 ---
 
 <MainLayout t={en}>
-  <Header t={en} currentLang="en" pathname={Astro.url.pathname} />
+  <Header t={en} currentLang="en" pathname={Astro.url.pathname} client:load />
   <Hero t={en} />
   <About t={en} />
   <Products t={en} />
