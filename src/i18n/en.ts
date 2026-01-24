@@ -166,6 +166,9 @@ export const en = {
     next: "Next Page",
     prev: "Previous Page",
     page: "Page",
+    of: "of",
+    videoTitle: "Moments in Motion",
+    videoSubtitle: "Relive the festive magic through our lenses.",
   },
   notFound: {
     title: "Oops! Sleigh Off Track",

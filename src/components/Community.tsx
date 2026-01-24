@@ -104,6 +104,19 @@ const images = [
   }
 ];
 
+const videos = [
+  {
+    id: "fZ1i1LW9fCw",
+    year: "2025",
+    title: "Globfest 2025 Highlights"
+  },
+  {
+    id: "-9KPYdEMyTM",
+    year: "2024",
+    title: "Globfest 2024 Magic"
+  }
+];
+
 const IMAGES_PER_PAGE = 8;
 
 export default function Community({ t }: any) {
@@ -239,17 +252,62 @@ export default function Community({ t }: any) {
             </div>
             
             <p className="text-sm font-medium text-gray-400 uppercase tracking-widest">
-              {t.community.page} {currentPage} of {totalPages}
+              {t.community.page} {currentPage} {t.community.of} {totalPages}
             </p>
           </div>
         )}
+
+        {/* Video Section */}
+        <div className="mt-32">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              {t.community.videoTitle}
+            </h2>
+            <p className="text-lg text-gray-600">
+              {t.community.videoSubtitle}
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {videos.map((video) => (
+              <motion.div
+                key={video.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="group"
+              >
+                <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-gray-100 mb-6 group-hover:shadow-christmas-red/10 transition-shadow duration-500">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="flex items-center justify-between px-4">
+                  <h3 className="text-xl font-bold text-gray-900">{video.title}</h3>
+                  <span className="px-4 py-1.5 bg-christmas-red/10 text-christmas-red rounded-full text-sm font-bold">
+                    {video.year}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         {/* Call to Action */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-24 text-center border-t border-gray-100 pt-16"
+          className="mt-32 text-center border-t border-gray-100 pt-16"
         >
           <motion.div 
             whileHover={{ scale: 1.05 }}

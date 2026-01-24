@@ -166,6 +166,9 @@ export const ro = {
     next: "Pagina Următoare",
     prev: "Pagina Precedentă",
     page: "Pagina",
+    of: "din",
+    videoTitle: "Momente în Mișcare",
+    videoSubtitle: "Retrăiește magia sărbătorilor prin lentila noastră.",
   },
   notFound: {
     title: "Ups! Sania a Ieșit de pe Traseu",
