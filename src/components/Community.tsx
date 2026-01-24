@@ -171,44 +171,34 @@ export default function Community({ t }: any) {
         </motion.div>
 
         {/* Gallery Grid */}
-        <motion.div 
-          layout
-          className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6"
-        >
-          <AnimatePresence mode="popLayout">
-            {currentImages.map((image, index) => (
-              <motion.div
-                key={image.url}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="relative group rounded-3xl overflow-hidden shadow-xl cursor-zoom-in"
-                onClick={() => setSelectedImage(image)}
-              >
-                <img 
-                  src={image.url} 
-                  alt={image.alt} 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-                  <h3 className="text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    {image.title}
-                  </h3>
-                  <p className="text-xs text-white/70 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                    {image.alt}
-                  </p>
-                </div>
-                <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full p-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+        <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
+          {currentImages.map((image) => (
+            <div
+              key={image.url}
+              className="relative group rounded-3xl overflow-hidden shadow-xl cursor-zoom-in"
+              onClick={() => setSelectedImage(image)}
+            >
+              <img 
+                src={image.url} 
+                alt={image.alt} 
+                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                <h3 className="text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  {image.title}
+                </h3>
+                <p className="text-xs text-white/70 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                  {image.alt}
+                </p>
+              </div>
+              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full p-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Pagination Section */}
         {totalPages > 1 && (
@@ -366,7 +356,6 @@ export default function Community({ t }: any) {
             </button>
 
             <motion.div
-              layoutId={selectedImage.url}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
