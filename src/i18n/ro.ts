@@ -3,6 +3,7 @@ export const ro = {
     about: "Despre",
     products: "Produse",
     causes: "Scop",
+    community: "Comunitate",
     contact: "Contact",
     blog: "Jurnal",
     cta: "Vezi Produsele",
@@ -158,6 +159,13 @@ export const ro = {
         image: "https://images.unsplash.com/photo-1464306208223-e0b4495a5553?q=80&w=800&auto=format&fit=crop",
       },
     ],
+  },
+  community: {
+    title: "Comunitatea Noastră",
+    subtitle: "Momente magice împărtășite de familia Globfest din întreaga lume.",
+    next: "Pagina Următoare",
+    prev: "Pagina Precedentă",
+    page: "Pagina",
   },
   notFound: {
     title: "Ups! Sania a Ieșit de pe Traseu",

@@ -3,6 +3,7 @@ export const en = {
     about: "About",
     products: "Products",
     causes: "Purpose",
+    community: "Community",
     contact: "Contact",
     blog: "Journal",
     cta: "Shop Now",
@@ -158,6 +159,13 @@ export const en = {
         image: "https://images.unsplash.com/photo-1464306208223-e0b4495a5553?q=80&w=800&auto=format&fit=crop",
       },
     ],
+  },
+  community: {
+    title: "Our Community",
+    subtitle: "Magical moments shared by the Globfest family around the world.",
+    next: "Next Page",
+    prev: "Previous Page",
+    page: "Page",
   },
   notFound: {
     title: "Oops! Sleigh Off Track",

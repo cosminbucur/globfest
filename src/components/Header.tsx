@@ -42,6 +42,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
   const homePath = currentLang === "ro" ? `${base}ro/`.replace(/\/\//g, "/") : base;
   const aboutPath = (currentLang === "ro" ? `${base}ro/about/` : `${base}about/`).replace(/\/\//g, "/");
   const blogPath = (currentLang === "ro" ? `${base}ro/blog/` : `${base}blog/`).replace(/\/\//g, "/");
+  const communityPath = (currentLang === "ro" ? `${base}ro/community/` : `${base}community/`).replace(/\/\//g, "/");
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
@@ -54,6 +55,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
           <a href={aboutPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.about}</a>
           <a href={`${homePath}#products`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.products}</a>
           <a href={`${homePath}#causes`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.causes}</a>
+          <a href={communityPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.community}</a>
           <a href={blogPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.blog}</a>
           <a href={`${homePath}#contact`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.contact}</a>
         </nav>
