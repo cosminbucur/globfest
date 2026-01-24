@@ -169,6 +169,12 @@ export const ro = {
     of: "din",
     videoTitle: "Momente în Mișcare",
     videoSubtitle: "Retrăiește magia sărbătorilor prin lentila noastră.",
+    timelineTitle: "Cronologia Globfest",
+    timelineSubtitle: "O călătorie prin anii de magie, creativitate și comunitate.",
+    eventPlace: "Locație",
+    eventTheme: "Temă",
+    eventGuests: "Invitați",
+    eventBaubles: "Globuri pictate",
   },
   notFound: {
     title: "Ups! Sania a Ieșit de pe Traseu",

@@ -169,6 +169,12 @@ export const en = {
     of: "of",
     videoTitle: "Moments in Motion",
     videoSubtitle: "Relive the festive magic through our lenses.",
+    timelineTitle: "Globfest Timeline",
+    timelineSubtitle: "A journey through years of magic, creativity, and community.",
+    eventPlace: "Location",
+    eventTheme: "Theme",
+    eventGuests: "Guests",
+    eventBaubles: "Painted Baubles",
   },
   notFound: {
     title: "Oops! Sleigh Off Track",
