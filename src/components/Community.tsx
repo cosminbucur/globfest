@@ -149,6 +149,12 @@ const timelineEvents = [
     photo: "https://images.unsplash.com/photo-1581091215307-9548b759c363?q=80&w=800&auto=format&fit=crop"
   },
   {
+    name: "Cauză nouă: Centrul Aspera",
+    description: "Am început colaborarea cu Centrul Aspera pentru a susține copiii cu nevoi speciale prin terapii inovatoare.",
+    date: "12 Dec, 2022",
+    photo: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop"
+  },
+  {
     name: "Globfest 2022: Tradiție",
     description: "Rădăcini românești și motive străvechi transpuse în artă modernă.",
     date: "05 Dec, 2022",
@@ -159,6 +165,12 @@ const timelineEvents = [
     photo: "https://images.unsplash.com/photo-1543332164-6e82f355badc?q=80&w=800&auto=format&fit=crop"
   },
   {
+    name: "Cauză nouă: Parohia Sf. Serafim de Sarov",
+    description: "Extinderea misiunii noastre caritabile către comunitatea din Cămineasca (Giurgiu).",
+    date: "20 Nov, 2022",
+    photo: "https://images.unsplash.com/photo-1548685913-fe6678babe8d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
     name: "Globfest 2021: Românesc",
     description: "Prima noastră celebrare a portului popular și a spiritului românesc autentic.",
     date: "30 Nov, 2021",
@@ -167,6 +179,24 @@ const timelineEvents = [
     guests: 50,
     baubles: 120,
     photo: "https://images.unsplash.com/photo-1512418490979-92798ccc1380?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Implicare și grupuri noi",
+    description: "Comunitatea Globfest s-a extins cu implicarea activă a studenților și a practicanților de Tai Chi.",
+    date: "15 Dec, 2018",
+    photo: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Primul eveniment caritabil",
+    description: "Startul misiunii noastre de a dărui: Biserica Sf. Dumitru Poșta alături de Asociația Umanitară Tadeu.",
+    date: "01 Dec, 2017",
+    photo: "https://images.unsplash.com/photo-1459183885447-df53d1f0d9bb?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Prima ediție Globfest",
+    description: "Momentul în care a început totul. Prima noastră expoziție de globuri pictate manual.",
+    date: "10 Dec, 2013",
+    photo: "https://images.unsplash.com/photo-1543589077-47d81606c1ad?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
@@ -393,14 +423,18 @@ export default function Community({ t }: any) {
                       <div className={`grid grid-cols-2 gap-4 w-full max-w-md ${
                         index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
                       }`}>
-                        <div className="bg-gray-50/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100">
-                          <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.community.eventPlace}</p>
-                          <p className="text-sm font-semibold text-gray-800">{event.place}</p>
-                        </div>
-                        <div className="bg-gray-50/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100">
-                          <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.community.eventTheme}</p>
-                          <p className="text-sm font-semibold text-gray-800">{event.theme}</p>
-                        </div>
+                        {event.place && (
+                          <div className="bg-gray-50/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100">
+                            <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.community.eventPlace}</p>
+                            <p className="text-sm font-semibold text-gray-800">{event.place}</p>
+                          </div>
+                        )}
+                        {event.theme && (
+                          <div className="bg-gray-50/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100">
+                            <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.community.eventTheme}</p>
+                            <p className="text-sm font-semibold text-gray-800">{event.theme}</p>
+                          </div>
+                        )}
                         {event.guests && (
                           <div className="bg-gray-50/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100">
                             <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.community.eventGuests}</p>
