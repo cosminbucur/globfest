@@ -21,7 +21,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ article, t, currentLang }) => {
     <article className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <div className="relative aspect-[16/10] overflow-hidden">
         <img
-          src={article.image}
+          src={article.image.startsWith("/") ? `${import.meta.env.BASE_URL}${article.image.slice(1)}` : article.image}
           alt={article.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />

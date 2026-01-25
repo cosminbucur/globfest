@@ -127,6 +127,7 @@ export const ro = {
       purpose: "Scop",
       lifestyle: "Stil de viață",
       inside: "În culise",
+      tutorials: "Tutoriale",
     },
     readTime: "min lectură",
     viewArticle: "Citește mai mult",
@@ -141,6 +142,65 @@ export const ro = {
         readTime: 5,
         image: "https://images.unsplash.com/photo-1576692139733-a742e4749f6a?q=80&w=800&auto=format&fit=crop",
       },
+      {
+        id: 7,
+        slug: "sfaturi-pentru-cei-grabiti",
+        title: "Sfaturi pentru cei grăbiți sau cei care cred că nu au talent",
+        description: "Sfaturi pentru pictarea globurilor",
+        category: "Tutoriale",
+        readTime: 10,
+        image: "/images/blog/2025-11-16/.main.png",
+        author: "Andreea Ar",
+        date: "16 Noi, 2025",
+        content: `
+<p>În primul rând, e important să acoperim globul cu o culoare omogenă (ex. alb, negru, roșu, verde).</p>
+<p>Lăsăm globul la uscat și bem un vin fiert / un ceai cald și mai povestim cu cei dragi.</p>
+<p>Alegem un model ușor de realizat: om de zăpadă, animăluțe cu căciuli de Moș Crăciun (pisici, oi, pinguini, lebede, urși, iepuri etc.), căsuțe înzăpezite, brazi etc. Ideal ar fi să conturați desenul, apoi să îl colorați și apoi să conturăm din nou produsul final.</p>
+<p>La final punem elemente de umplutură: fulgi, clopoței, lumânări, crengi de brad, cutii de cadouri, scrisori, cozonac, vâsc, căni aburinde, felii de portocale, pahare cu vin, beculețe de Crăciun etc.</p>
+<p>Și dacă mai rămâne loc, putem pune și o semnătură, de exemplu: Globfest sau un mesaj drăguț.</p>
+
+<p class="text-lg font-bold mt-12 mb-6">Mai jos aveți câteva schițe realizate de mine pe fugă 😄 care să vă inspire.</p>
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">❄️ Fulgi</h3>
+<p>Când desenați un fulg, puteți fi foarte creativi. Imaginați-vă doar că aveți niște mandale de realizat și turnați ce simțiți.</p>
+<img src="/images/blog/2025-11-16/fulgi.png" alt="Schițe fulgi" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">🎄 Brazi</h3>
+<p>Și atunci când desenați brazi, vă puteți juca cu diferite modele. La fel, puteți adăuga elemente personale. Nu vă fie teamă să fiți inventivi (ideal, mai întâi pe o ciornă, ca să vedeți dacă chiar vă place).</p>
+<img src="/images/blog/2025-11-16/brazi.png" alt="Schițe brazi" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">⛄ Oameni de zăpadă</h3>
+<p>La oameni de zăpadă, am prezentat 3 niveluri de dificultate (1 – cel mai ușor, 2 – mediu, 3 – mai dificil).</p>
+<img src="/images/blog/2025-11-16/oameni-de-zapada.png" alt="Schițe oameni de zăpadă" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Câteva exemple de elemente de umplutură:</h3>
+<img src="/images/blog/2025-11-16/exemple.png" alt="Elemente de umplutură" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Câteva exemple care includ un tot unitar, ca o poveste:</h3>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+    <div>
+        <h4 class="text-xl font-bold mb-4">Cat’s Christmas Wish</h4>
+        <img src="/images/blog/2025-11-16/cat-christmas-wish.png" alt="Cat’s Christmas Wish" class="rounded-xl shadow-md w-full" />
+    </div>
+    <div>
+        <h4 class="text-xl font-bold mb-4">Frozen Night’s Beauty</h4>
+        <img src="/images/blog/2025-11-16/frozen-night-beauty.png" alt="Frozen Night’s Beauty" class="rounded-xl shadow-md w-full" />
+    </div>
+</div>
+
+<div class="max-w-2xl mx-auto">
+    <h4 class="text-xl font-bold mb-4">Winter Love Story</h4>
+    <img src="/images/blog/2025-11-16/winter-love-story.png" alt="Winter Love Story" class="rounded-xl shadow-md w-full" />
+</div>
+
+<p class="mt-12">Iar pentru iubitorii de tradițional, oricând e binevenit un glob cu un tricolor sau elemente decorative românești.</p>
+<p class="font-bold text-christmas-red">Mult spor si inspiratie! Sa cream povesti!</p>
+
+<p class="mt-8 italic text-gray-500">Andreea Ar.</p>
+`
+      },
+
       {
         id: 2,
         slug: "perfect-color-palette-christmas-tree",

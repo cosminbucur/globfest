@@ -47,11 +47,11 @@ const t = ro;
             <div class="flex items-center gap-6 pb-12 border-b border-gray-100 mb-12">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-christmas-red/5 flex items-center justify-center text-christmas-red font-bold">
-                        G
+                        {article.author ? article.author[0] : 'G'}
                     </div>
                     <div>
-                        <p class="text-sm font-bold text-gray-900">Echipa Globfest</p>
-                        <p class="text-xs text-gray-500 font-medium">23 Ian, 2026</p>
+                        <p class="text-sm font-bold text-gray-900">{article.author || "Echipa Globfest"}</p>
+                        <p class="text-xs text-gray-500 font-medium">{article.date || "23 Ian, 2026"}</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ const t = ro;
 
         <div class="container mx-auto px-4 max-w-4xl mb-12">
             <img 
-                src={article.image} 
+                src={article.image.startsWith("/") ? `${import.meta.env.BASE_URL}${article.image.slice(1)}` : article.image} 
                 alt={article.title} 
                 class="w-full aspect-video object-cover rounded-3xl shadow-2xl mb-12"
             />
@@ -69,20 +69,26 @@ const t = ro;
                     {article.description}
                 </p>
                 
-                <p>
-                    Acesta este un text de umplutură. În curând vom publica articolul complet despre această temă fascinantă legată de magia Crăciunului și arta globurilor pictate manual.
-                </p>
-                
-                <div class="bg-gray-50 rounded-2xl p-8 my-12 border-l-4 border-christmas-red">
-                    <p class="italic text-gray-700 text-lg">
-                        "Fiecare glob creat de noi poartă cu el o fărâmă din magia sărbătorilor și pasiunea artiștilor noștri."
-                    </p>
-                </div>
+                {article.content ? (
+                    <div set:html={article.content.replace(/src="\//g, `src="${import.meta.env.BASE_URL}`)} />
+                ) : (
+                    <>
+                        <p>
+                            Acesta este un text de umplutură. În curând vom publica articolul complet despre această temă fascinantă legată de magia Crăciunului și arta globurilor pictate manual.
+                        </p>
+                        
+                        <div class="bg-gray-50 rounded-2xl p-8 my-12 border-l-4 border-christmas-red">
+                            <p class="italic text-gray-700 text-lg">
+                                "Fiecare glob creat de noi poartă cu el o fărâmă din magia sărbătorilor și pasiunea artiștilor noștri."
+                            </p>
+                        </div>
 
-                <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Explorând Detaliile</h2>
-                <p>
-                    Suntem dedicați păstrării tradițiilor în timp ce aducem un suflu modern fiecărui design. Te invităm să urmărești jurnalul nostru pentru mai multe noutăți.
-                </p>
+                        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Explorând Detaliile</h2>
+                        <p>
+                            Suntem dedicați păstrării tradițiilor în timp ce aducem un suflu modern fiecărui design. Te invităm să urmărești jurnalul nostru pentru mai multe noutăți.
+                        </p>
+                    </>
+                )}
             </div>
         </div>
     </article>

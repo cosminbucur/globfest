@@ -127,11 +127,70 @@ export const en = {
       purpose: "Purpose",
       lifestyle: "Lifestyle",
       inside: "Inside Globfest",
+      tutorials: "Tutorials",
     },
     readTime: "min read",
     viewArticle: "Read More",
     noResults: "No articles found matching your search.",
     articles: [
+      {
+        id: 7,
+        slug: "sfaturi-pentru-cei-grabiti",
+        title: "Tips for the Hurried or Those Who Think They Lack Talent",
+        description: "Tips for painting baubles",
+        category: "Tutorials",
+        readTime: 10,
+        image: "/images/blog/2025-11-16/.main.png",
+        author: "Andreea Ar",
+        date: "Nov 16, 2025",
+        content: `
+<p>First of all, it's important to cover the bauble with a homogeneous color (e.g., white, black, red, green).</p>
+<p>Leave the bauble to dry and have a mulled wine / a warm tea and chat with your loved ones.</p>
+<p>Choose an easy-to-realize pattern: a snowman, animals with Santa hats (cats, sheep, penguins, swans, bears, rabbits, etc.), snowy houses, Christmas trees, etc. Ideally, you should outline the drawing, then color it, and then outline the final product again.</p>
+<p>At the end, add filler elements: flakes, bells, candles, fir branches, gift boxes, letters, sponge cake, mistletoe, steaming mugs, orange slices, glasses of wine, Christmas lights, etc.</p>
+<p>And if there's still room, you can add a signature, for example: Globfest or a cute message.</p>
+
+<p class="text-lg font-bold mt-12 mb-6">Below are some sketches I made in a hurry 😄 to inspire you.</p>
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">❄️ Flakes</h3>
+<p>When drawing a flake, you can be very creative. Just imagine you have some mandalas to create and pour out what you feel.</p>
+<img src="/images/blog/2025-11-16/fulgi.png" alt="Flake sketches" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">🎄 Trees</h3>
+<p>And when drawing trees, you can play with different patterns. Likewise, you can add personal elements. Don't be afraid to be inventive (ideally, first on a draft, to see if you really like it).</p>
+<img src="/images/blog/2025-11-16/brazi.png" alt="Tree sketches" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">⛄ Snowmen</h3>
+<p>For snowmen, I presented 3 difficulty levels (1 – easiest, 2 – medium, 3 – more difficult).</p>
+<img src="/images/blog/2025-11-16/oameni-de-zapada.png" alt="Snowmen sketches" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Some examples of filler elements:</h3>
+<img src="/images/blog/2025-11-16/exemple.png" alt="Filler elements" class="rounded-2xl shadow-lg my-8 w-full" />
+
+<h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 text-christmas-red">Some examples that include a whole, like a story:</h3>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+    <div>
+        <h4 class="text-xl font-bold mb-4">Cat’s Christmas Wish</h4>
+        <img src="/images/blog/2025-11-16/cat-christmas-wish.png" alt="Cat’s Christmas Wish" class="rounded-xl shadow-md w-full" />
+    </div>
+    <div>
+        <h4 class="text-xl font-bold mb-4">Frozen Night’s Beauty</h4>
+        <img src="/images/blog/2025-11-16/frozen-night-beauty.png" alt="Frozen Night’s Beauty" class="rounded-xl shadow-md w-full" />
+    </div>
+</div>
+
+<div class="max-w-2xl mx-auto">
+    <h4 class="text-xl font-bold mb-4">Winter Love Story</h4>
+    <img src="/images/blog/2025-11-16/winter-love-story.png" alt="Winter Love Story" class="rounded-xl shadow-md w-full" />
+</div>
+
+<p class="mt-12">And for lovers of traditional, a bauble with a tricolor or Romanian decorative elements is always welcome.</p>
+<p class="font-bold text-christmas-red">Lots of success and inspiration! Let's create stories!</p>
+
+<p class="mt-8 italic text-gray-500">Andreea Ar.</p>
+`
+      },
       {
         id: 1,
         slug: "art-of-hand-painting-baubles",

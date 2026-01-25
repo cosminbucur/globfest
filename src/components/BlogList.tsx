@@ -10,21 +10,21 @@ interface BlogListProps {
 
 const BlogList: React.FC<BlogListProps> = ({ t, currentLang }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState(t.blog.categories.all);
 
   const categories = useMemo(() => {
-    const cats = ["All", ...new Set(t.blog.articles.map((a: any) => a.category))];
+    const cats = [t.blog.categories.all, ...new Set(t.blog.articles.map((a: any) => a.category))];
     return cats;
-  }, [t.blog.articles]);
+  }, [t.blog.articles, t.blog.categories.all]);
 
   const filteredArticles = useMemo(() => {
     return t.blog.articles.filter((article: any) => {
       const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           article.description.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = selectedCategory === "All" || article.category === selectedCategory;
+      const matchesCategory = selectedCategory === t.blog.categories.all || article.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
-  }, [searchTerm, selectedCategory, t.blog.articles]);
+  }, [searchTerm, selectedCategory, t.blog.articles, t.blog.categories.all]);
 
   return (
     <section className="py-12">
@@ -82,10 +82,10 @@ const BlogList: React.FC<BlogListProps> = ({ t, currentLang }) => {
             </div>
             <p className="text-gray-500 text-lg font-medium">{t.blog.noResults}</p>
             <button 
-                onClick={() => { setSearchTerm(""); setSelectedCategory("All"); }}
+                onClick={() => { setSearchTerm(""); setSelectedCategory(t.blog.categories.all); }}
                 className="mt-4 text-christmas-red font-semibold hover:underline"
             >
-                Clear all filters
+                {currentLang === 'ro' ? 'Resetează filtrele' : 'Clear all filters'}
             </button>
           </div>
         )}
