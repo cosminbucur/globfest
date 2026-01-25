@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 
-export default function Products({ t }: any) {
+export default function Products({ t, lang = "en" }: any) {
+  const base = import.meta.env.BASE_URL;
+  const contactPath = (lang === "ro" ? `${base}ro/contact/` : `${base}contact/`).replace(/\/\//g, "/");
+
   return (
     <section id="products" className="py-24 bg-gray-50 px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -31,7 +34,7 @@ export default function Products({ t }: any) {
         </div>
 
         <Button asChild className="bg-christmas-green hover:bg-christmas-red text-white px-8 h-12 rounded-full">
-          <a href="#contact">
+          <a href={contactPath}>
             {t.products.cta}
           </a>
         </Button>

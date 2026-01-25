@@ -46,8 +46,30 @@ export const en = {
   },
   contact: {
     title: "Let’s Create Something Magical",
-    subtitle: "Questions, custom orders, or collaborations?",
+    subtitle: "Questions, custom orders, or collaborations? We'd love to hear from you.",
     cta: "Contact Us",
+    form: {
+      name: "Full Name",
+      email: "Email Address",
+      subject: "Subject",
+      message: "Your Message",
+      send: "Send Message",
+      sending: "Sending...",
+      success: "Message sent! We'll get back to you soon.",
+      error: "Oops! Something went wrong. Please try again.",
+      placeholders: {
+        name: "John Doe",
+        email: "john@example.com",
+        subject: "How can we help?",
+        message: "Tell us about your magical project..."
+      }
+    },
+    info: {
+      email: "Email Us",
+      phone: "Call Us",
+      address: "Visit Us",
+      social: "Follow Us"
+    }
   },
   newsletter: {
     title: "Join the Festive Magic",
@@ -59,6 +81,11 @@ export const en = {
   },
   footer: {
     rights: "All rights reserved.",
+    explore: "Explore",
+    info: "Information",
+    contact: "Contact",
+    location: "Location",
+    address: "Bucharest, Romania",
   },
   causes: {
     title: "Baubles with Purpose",

@@ -34,6 +34,6 @@ const {
   <body class="bg-white text-gray-800 antialiased font-sans">
     <slot />
     <Newsletter t={t} client:load />
-    <Footer t={t} />
+    <Footer t={t} currentLang={lang as "en" | "ro"} />
   </body>
 </html>

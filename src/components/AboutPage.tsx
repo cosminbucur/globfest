@@ -82,7 +82,7 @@ export default function AboutPage({ t, lang = "en" }: any) {
             {t.about.visitSubtitle}
           </p>
           <a 
-            href={`${homePath}#contact`} 
+            href={lang === "ro" ? `${base}ro/contact/`.replace(/\/\//g, "/") : `${base}contact/`.replace(/\/\//g, "/")} 
             className="inline-block bg-christmas-red text-white px-10 py-4 rounded-full font-bold hover:bg-christmas-green transition-colors shadow-lg hover:shadow-christmas-green/25"
           >
             {t.contact.cta}

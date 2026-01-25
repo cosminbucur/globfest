@@ -44,6 +44,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
   const blogPath = (currentLang === "ro" ? `${base}ro/blog/` : `${base}blog/`).replace(/\/\//g, "/");
   const communityPath = (currentLang === "ro" ? `${base}ro/community/` : `${base}community/`).replace(/\/\//g, "/");
   const eventsPath = (currentLang === "ro" ? `${base}ro/events/` : `${base}events/`).replace(/\/\//g, "/");
+  const contactPath = (currentLang === "ro" ? `${base}ro/contact/` : `${base}contact/`).replace(/\/\//g, "/");
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
@@ -59,7 +60,7 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
           <a href={communityPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.community}</a>
           <a href={blogPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.blog}</a>
           <a href={eventsPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.events}</a>
-          <a href={`${homePath}#contact`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.contact}</a>
+          <a href={contactPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.contact}</a>
         </nav>
 
         <div className="flex items-center gap-4">

@@ -46,8 +46,30 @@ export const ro = {
   },
   contact: {
     title: "Hai să Creăm Ceva Magic",
-    subtitle: "Întrebări, comenzi personalizate sau colaborări?",
+    subtitle: "Întrebări, comenzi personalizate sau colaborări? Ne-ar plăcea să stăm de vorbă.",
     cta: "Contactează-ne",
+    form: {
+      name: "Nume Complet",
+      email: "Adresă de Email",
+      subject: "Subiect",
+      message: "Mesajul Tău",
+      send: "Trimite Mesajul",
+      sending: "Se trimite...",
+      success: "Mesajul a fost trimis! Revenim curând.",
+      error: "Ups! Ceva n-a mers bine. Te rugăm să încerci din nou.",
+      placeholders: {
+        name: "Popescu Ion",
+        email: "ion@exemplu.ro",
+        subject: "Cu ce te putem ajuta?",
+        message: "Povestește-ne despre proiectul tău magic..."
+      }
+    },
+    info: {
+      email: "Scrie-ne",
+      phone: "Sună-ne",
+      address: "Vizitează-ne",
+      social: "Urmărește-ne"
+    }
   },
   newsletter: {
     title: "Alătură-te Magiei de Sărbători",
@@ -59,6 +81,11 @@ export const ro = {
   },
   footer: {
     rights: "Toate drepturile rezervate.",
+    explore: "Explorează",
+    info: "Informații",
+    contact: "Contact",
+    location: "Locație",
+    address: "București, România",
   },
   causes: {
     title: "Globuri cu Scop",
