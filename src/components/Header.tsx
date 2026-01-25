@@ -49,8 +49,17 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href={homePath} className="text-2xl font-bold text-christmas-red hover:opacity-80 transition-opacity">
-          Globfest
+        <a href={homePath} className="flex items-center gap-2 group transition-opacity hover:opacity-90">
+          <div className="w-10 h-10 flex items-center justify-center">
+            <img 
+              src={`${base}images/icon-globfest.svg`} 
+              alt="Globfest Icon" 
+              className="w-full h-full transform group-hover:scale-110 transition-transform duration-300" 
+            />
+          </div>
+          <span className="text-2xl font-bold text-christmas-red">
+            Globfest
+          </span>
         </a>
 
         <nav className="hidden md:flex gap-8">
