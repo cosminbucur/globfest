@@ -6,6 +6,7 @@ export const en = {
     community: "Community",
     contact: "Contact",
     blog: "Journal",
+    events: "Events",
     cta: "Shop Now",
   },
   hero: {
@@ -180,5 +181,40 @@ export const en = {
     title: "Oops! Sleigh Off Track",
     subtitle: "It seems this page has fallen off Santa's sleigh or was eaten by a hungry reindeer. Even the elves couldn't find it!",
     cta: "Back to Christmas Magic",
+  },
+  events: {
+    title: "Magic in the Making",
+    subtitle: "Join our festive celebrations and workshops.",
+    latestTitle: "Latest Event",
+    upcomingTitle: "Upcoming Events",
+    date: "Date",
+    time: "Time",
+    location: "Location",
+    register: "Register Now",
+    latest: {
+      title: "Globfest 2025 - 12th Edition",
+      theme: "Fairy Tale Theme",
+      date: "November 12, 2025",
+      time: "17:00",
+      location: "Ever After (Mendeleev 5), Bucharest",
+      description: "🎨 **Painting Christmas Ornaments**\n🎵 **Singing Carols**\n✨ **Bringing Joy to the World**\n💡 Talent is not mandatory :)\n❤️ All ornaments will be donated to charity!\n👗 Dress Code (optional, but great for photos):\nChristmas sweaters or festive dresses 🎄",
+      regLink: "https://forms.gle/globfest2025",
+    },
+    upcoming: [
+      {
+        title: "Workshop: Painting with Light",
+        date: "November 20, 2026",
+        location: "Globfest Studio",
+        regLink: "https://forms.gle/workshop1",
+        image: "https://images.unsplash.com/photo-1543589077-47d81606c1ad?q=80&w=800&auto=format&fit=crop",
+      },
+      {
+        title: "Festive Evening: Stories of Glass",
+        date: "December 5, 2026",
+        location: "City Grill Covaci",
+        regLink: "https://forms.gle/stories1",
+        image: "https://images.unsplash.com/photo-1513297887119-d46091b24bfa?q=80&w=800&auto=format&fit=crop",
+      }
+    ]
   },
 };

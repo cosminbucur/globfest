@@ -6,6 +6,7 @@ export const ro = {
     community: "Comunitate",
     contact: "Contact",
     blog: "Jurnal",
+    events: "Evenimente",
     cta: "Vezi Produsele",
   },
   hero: {
@@ -180,5 +181,40 @@ export const ro = {
     title: "Ups! Sania a Ieșit de pe Traseu",
     subtitle: "Se pare că această pagină a căzut din sania lui Moș Crăciun sau a fost mâncată de un ren flămând. Nici măcar spiridușii nu o găsesc!",
     cta: "Înapoi la Magia Crăciunului",
+  },
+  events: {
+    title: "Magie în Devenire",
+    subtitle: "Alătură-te sărbătorilor și atelierelor noastre festive.",
+    latestTitle: "Ultimul Eveniment",
+    upcomingTitle: "Evenimente Viitoare",
+    date: "Data",
+    time: "Ora",
+    location: "Locație",
+    register: "Înscrie-te Acum",
+    latest: {
+       title: "Globfest 2025 - Ediția a 12-a",
+       theme: "Tema zâne din povești",
+       date: "12 Noiembrie, 2025",
+       time: "17:00",
+       location: "Ever After (Mendeleev 5), București",
+       description: "🎨 **Pictăm globuri de Crăciun**\n🎵 **Cântăm colinde**\n✨ **Aducem bucurie în lume**\n💡 Talentul nu este obligatoriu :)\n❤️ Toate globurile vor fi donate în scop caritabil!\n👗 **Dress Code** (opțional, dar minunat pentru poze):\nPulovere de Crăciun sau rochii festive 🎄",
+       regLink: "https://forms.gle/globfest2025",
+    },
+    upcoming: [
+      {
+        title: "Atelier: Pictură cu Lumină",
+        date: "20 Noiembrie, 2026",
+        location: "Studioul Globfest",
+        regLink: "https://forms.gle/workshop1",
+        image: "https://images.unsplash.com/photo-1543589077-47d81606c1ad?q=80&w=800&auto=format&fit=crop",
+      },
+      {
+        title: "Seară Festivă: Povești din Sticlă",
+        date: "5 Decembrie, 2026",
+        location: "City Grill Covaci",
+        regLink: "https://forms.gle/stories1",
+        image: "https://images.unsplash.com/photo-1513297887119-d46091b24bfa?q=80&w=800&auto=format&fit=crop",
+      }
+    ]
   },
 };
