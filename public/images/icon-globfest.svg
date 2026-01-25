@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="baubleShine" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff7b89" />
+      <stop offset="60%" stop-color="#e63946" />
+      <stop offset="100%" stop-color="#8a0f1a" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9d423" />
+      <stop offset="50%" stop-color="#ffbb00" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="15" />
+      <feOffset dx="8" dy="8" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main Bauble -->
+  <circle cx="256" cy="270" r="175" fill="url(#baubleShine)" filter="url(#dropShadow)" />
+  
+  <!-- Subtle Highlight -->
+  <ellipse cx="190" cy="180" rx="65" ry="40" fill="white" fill-opacity="0.25" transform="rotate(-30, 190, 180)" />
+
+  <!-- Cap and Ring -->
+  <g transform="translate(226, 85)">
+    <rect width="60" height="35" rx="5" fill="url(#gold)" />
+    <circle cx="30" cy="-15" r="20" fill="none" stroke="url(#gold)" stroke-width="8" />
+  </g>
+
+  <!-- Golden Paint Sweep -->
+  <path d="M110,380 C170,460 360,430 410,210" fill="none" stroke="url(#gold)" stroke-width="25" stroke-linecap="round" opacity="0.9" filter="url(#dropShadow)" />
+
+  <!-- Paintbrush -->
+  <g transform="translate(80, 450) rotate(-45)">
+    <path d="M0,10 L170,10 Q185,10 185,25 L185,25 Q185,40 170,40 L0,40 Z" fill="#5d4037" />
+    <rect x="170" y="5" width="30" height="40" rx="3" fill="#b0bec5" />
+    <path d="M200,5 L250,25 L200,45 Z" fill="url(#gold)" />
+  </g>
+
+  <!-- Sparkling Stars (Charity Spirit) -->
+  <path d="M430,140 L436,158 L455,164 L436,170 L430,188 L424,170 L405,164 L424,158 Z" fill="#f9d423" />
+  <path d="M160,430 L164,440 L175,444 L164,448 L160,458 L156,448 L145,444 L156,440 Z" fill="#f9d423" />
+  <path d="M470,250 L473,256 L480,259 L473,262 L470,268 L467,262 L460,259 L467,256 Z" fill="#f9d423" />
+</svg>

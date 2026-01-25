@@ -1,0 +1,15 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header";
+import Community from "../../components/Community";
+import { ro } from "../../i18n/ro";
+
+const pathname = Astro.url.pathname;
+---
+
+<MainLayout t={ro} title="Comunitate | Globfest" lang="ro">
+  <Header t={ro} currentLang="ro" pathname={pathname} client:load />
+  <main>
+    <Community t={ro} client:load />
+  </main>
+</MainLayout>
