@@ -2,6 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import UpcomingEvents from "../../components/UpcomingEvents";
 import About from "../../components/About";
 import Products from "../../components/Products";
 import Purposes from "../../components/Purposes";
@@ -11,9 +12,10 @@ import { ro } from "../../i18n/ro";
 
 <MainLayout t={ro} lang="ro">
   <Header t={ro} currentLang="ro" pathname={Astro.url.pathname} client:load />
-  <Hero t={ro} />
-  <About t={ro} lang="ro" />
-  <Products t={ro} lang="ro" />
-  <Purposes t={ro} />
-  <Contact t={ro} lang="ro" />
+  <Hero t={ro} currentLang="ro" client:load />
+  <About t={ro} lang="ro" client:load />
+  <UpcomingEvents t={ro} currentLang="ro" client:load />
+  <Products t={ro} lang="ro" client:load />
+  <Purposes t={ro} client:load />
+  <Contact t={ro} lang="ro" client:load />
 </MainLayout>

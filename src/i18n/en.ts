@@ -17,6 +17,7 @@ export const en = {
   about: {
     title: "About GlobFest",
     subtitle: "Art, friendship, and generosity under one roof.",
+    description: "At GlobFest we gather with friends to paint Christmas baubles over a cup of tea or mulled wine, which we then donate to be sold for charitable purposes.",
     cta: "Learn More",
     storyTitle: "Our Story",
     storyContent: "In short, at GlobFest, we gather with friends to paint Christmas baubles over a cup of tea or mulled wine, which we then donate to be sold for charitable purposes.\n\nWhile we focus on quality over quantity, don't panic if you think you lack artistic talent! We will surely find something easy to paint that is charming and perfectly 'instagrammable'. 😊 And if you're not ready to pick up a brush just yet, there are many other interesting ways you can contribute to the success of our events.\n\nOur Objectives:\n\n- To enjoy each other's company and have a great time\n- To discover hidden talents and challenge our creativity\n- To build a wonderful community based on soul-to-soul connections and friendship\n- To create an environment filled with kindness and understanding\n- To beautify the world through art and culture\n- To create unique and meaningful gifts for loved ones\n- To bring a little light into the world and perform a good deed\n\nIf you identify with even one of these goals, we would love for you to join the GlobFest family.\n\nLooking ahead, we aim to expand these events nationwide so we can support even more charitable purposes. Everyone deserves a memorable Christmas—not one defined by scarcity, but by abundance… an abundance of friends, love, and gifts. ❤️",
@@ -274,7 +275,7 @@ export const en = {
   events: {
     title: "Magic in the Making",
     subtitle: "Join our festive celebrations and workshops.",
-    latestTitle: "Latest Event",
+    latestTitle: "New Event",
     upcomingTitle: "Upcoming Events",
     date: "Date",
     time: "Time",
@@ -282,7 +283,7 @@ export const en = {
     register: "Register Now",
     latest: {
       title: "Globfest 2025 - 12th Edition",
-      theme: "Fairy Tale Theme",
+      theme: "Fairy Tale",
       date: "November 12, 2025",
       time: "17:00",
       location: "Ever After (Mendeleev 5), Bucharest",
@@ -292,6 +293,7 @@ export const en = {
     upcoming: [
       {
         title: "Workshop: Painting with Light",
+        theme: "Northern Lights",
         date: "November 20, 2026",
         location: "Globfest Studio",
         regLink: "https://forms.gle/workshop1",
@@ -299,6 +301,7 @@ export const en = {
       },
       {
         title: "Festive Evening: Stories of Glass",
+        theme: "Romanian Fairy Tales",
         date: "December 5, 2026",
         location: "City Grill Covaci",
         regLink: "https://forms.gle/stories1",

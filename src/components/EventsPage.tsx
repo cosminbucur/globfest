@@ -104,7 +104,7 @@ export default function EventsPage({ t }: any) {
           </p>
         </motion.div>
 
-        {/* Latest Event Section */}
+        {/* New Event Section */}
         <div className="mb-32">
           <motion.h2 
             initial={{ opacity: 0 }}
@@ -125,7 +125,7 @@ export default function EventsPage({ t }: any) {
               <div className="lg:w-5/12 relative min-h-[400px]">
                 <img 
                   src={`${base}images/events/latest-globfest-poster.jpeg`}
-                  alt="Latest Event Poster"
+                  alt="New Event Poster"
                   className="w-full h-full object-cover lg:absolute inset-0"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/5" />
@@ -280,6 +280,14 @@ export default function EventsPage({ t }: any) {
                     </svg>
                     {event.location}
                   </div>
+                  {event.theme && (
+                    <div className="flex items-center gap-2 text-christmas-green text-sm mb-4 font-bold">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                      {t.community.eventTheme}: {event.theme}
+                    </div>
+                  )}
                   <a 
                     href={event.regLink}
                     target="_blank"

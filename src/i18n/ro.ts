@@ -17,6 +17,7 @@ export const ro = {
   about: {
     title: "Despre GlobFest",
     subtitle: "Artă, prietenie și generozitate sub același acoperiș.",
+    description: "La GlobFest ne adunăm cu prietenii și pictăm globulețe la o cană de ceai sau vin fiert, pe care ulterior le donăm pentru a fi vândute în scopuri caritabile.",
     cta: "Află Mai Mult",
     storyTitle: "Povestea Noastră",
     storyContent: "Pe scurt, la GlobFest ne adunăm cu prietenii și pictăm globulețe la o cană de ceai sau vin fiert, pe care ulterior le donăm pentru a fi vândute în scopuri caritabile.\n\nDeși punem accentul pe calitate, nu pe cantitate, chiar dacă simți că nu ai talent, nu te panica! Sigur vom găsi ceva ușor de pictat care să aibă mult farmec și să fie chiar instagramabil. 😊 Iar dacă nu ai încă curajul să pictezi, putem găsi și alte activități interesante care pot ajuta la desfășurarea evenimentului.\n\nObiectivele noastre:\n\n- Să ne simțim bine împreună\n- Să ne descoperim talentele ascunse și să ne provocăm creativitatea\n- Să creăm o comunitate faină bazată pe conexiuni de suflet și prietenie\n- Să construim un cadru plin de bunătate și înțelegere\n- Să înfrumusețăm universul prin artă și cultură\n- Să creăm cadouri inedite pentru cei dragi\n- Să aducem puțină lumină în jurul nostru și să facem o faptă bună\n\nDacă simți că te regăsești în cel puțin unul dintre aceste obiective, te așteptăm cu drag să te alături evenimentelor Globfest.\n\nPe viitor, ne dorim să ne extindem cu aceste evenimente în întreaga țară, astfel încât să putem adăuga mai multe cauze caritabile. Toți oamenii merită un Crăciun memorabil, care să nu fie despre lipsă, ci despre abundență… abundență de prieteni, de iubire și de cadouri. ❤️",
@@ -275,7 +276,7 @@ export const ro = {
   events: {
     title: "Magie în Devenire",
     subtitle: "Alătură-te sărbătorilor și atelierelor noastre festive.",
-    latestTitle: "Ultimul Eveniment",
+    latestTitle: "Eveniment Nou",
     upcomingTitle: "Evenimente Viitoare",
     date: "Data",
     time: "Ora",
@@ -283,7 +284,7 @@ export const ro = {
     register: "Înscrie-te Acum",
     latest: {
        title: "Globfest 2025 - Ediția a 12-a",
-       theme: "Tema zâne din povești",
+       theme: "Zâne din povești",
        date: "12 Noiembrie, 2025",
        time: "17:00",
        location: "Ever After (Mendeleev 5), București",
@@ -293,6 +294,7 @@ export const ro = {
     upcoming: [
       {
         title: "Atelier: Pictură cu Lumină",
+        theme: "Lumina Nordului",
         date: "20 Noiembrie, 2026",
         location: "Studioul Globfest",
         regLink: "https://forms.gle/workshop1",
@@ -300,6 +302,7 @@ export const ro = {
       },
       {
         title: "Seară Festivă: Povești din Sticlă",
+        theme: "Basme Românești",
         date: "5 Decembrie, 2026",
         location: "City Grill Covaci",
         regLink: "https://forms.gle/stories1",
