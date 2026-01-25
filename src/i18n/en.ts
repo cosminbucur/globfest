@@ -2,7 +2,7 @@ export const en = {
   nav: {
     about: "About",
     products: "Products",
-    causes: "Purpose",
+    purposes: "Purpose",
     community: "Community",
     contact: "Contact",
     blog: "Journal",
@@ -19,7 +19,7 @@ export const en = {
     subtitle: "Art, friendship, and generosity under one roof.",
     cta: "Learn More",
     storyTitle: "Our Story",
-    storyContent: "In short, at GlobFest, we gather with friends to paint Christmas baubles over a cup of tea or mulled wine, which we then donate to be sold for charitable causes.\n\nWhile we focus on quality over quantity, don't panic if you think you lack artistic talent! We will surely find something easy to paint that is charming and perfectly 'instagrammable'. 😊 And if you're not ready to pick up a brush just yet, there are many other interesting ways you can contribute to the success of our events.\n\nOur Objectives:\n\n- To enjoy each other's company and have a great time\n- To discover hidden talents and challenge our creativity\n- To build a wonderful community based on soul-to-soul connections and friendship\n- To create an environment filled with kindness and understanding\n- To beautify the world through art and culture\n- To create unique and meaningful gifts for loved ones\n- To bring a little light into the world and perform a good deed\n\nIf you identify with even one of these goals, we would love for you to join the GlobFest family.\n\nLooking ahead, we aim to expand these events nationwide so we can support even more charitable causes. Everyone deserves a memorable Christmas—not one defined by scarcity, but by abundance… an abundance of friends, love, and gifts. ❤️",
+    storyContent: "In short, at GlobFest, we gather with friends to paint Christmas baubles over a cup of tea or mulled wine, which we then donate to be sold for charitable purposes.\n\nWhile we focus on quality over quantity, don't panic if you think you lack artistic talent! We will surely find something easy to paint that is charming and perfectly 'instagrammable'. 😊 And if you're not ready to pick up a brush just yet, there are many other interesting ways you can contribute to the success of our events.\n\nOur Objectives:\n\n- To enjoy each other's company and have a great time\n- To discover hidden talents and challenge our creativity\n- To build a wonderful community based on soul-to-soul connections and friendship\n- To create an environment filled with kindness and understanding\n- To beautify the world through art and culture\n- To create unique and meaningful gifts for loved ones\n- To bring a little light into the world and perform a good deed\n\nIf you identify with even one of these goals, we would love for you to join the GlobFest family.\n\nLooking ahead, we aim to expand these events nationwide so we can support even more charitable purposes. Everyone deserves a memorable Christmas—not one defined by scarcity, but by abundance… an abundance of friends, love, and gifts. ❤️",
     established: "Established 2012",
     location: "Bucharest, Romania",
     visitTitle: "Want to see the magic in person?",
@@ -87,10 +87,12 @@ export const en = {
     contact: "Contact",
     location: "Location",
     address: "Bucharest, Romania",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
   },
-  causes: {
+  purposes: {
     title: "Baubles with Purpose",
-    subtitle: "Every purchase supports a cause close to our hearts. Together, we can make the holiday season brighter for everyone.",
+    subtitle: "Every purchase supports a purpose close to our hearts. Together, we can make the holiday season brighter for everyone.",
     viewWebsite: "Visit Website",
     details: "Details",
     items: {
@@ -223,7 +225,7 @@ export const en = {
         id: 4,
         slug: "meaningful-ways-to-give-back",
         title: "5 Meaningful Ways to Give Back This Holiday Season",
-        description: "Make your celebrations more impactful by supporting local communities and charitable causes during the winter months.",
+        description: "Make your celebrations more impactful by supporting local communities and charitable purposes during the winter months.",
         category: "Purpose",
         readTime: 6,
         image: "https://images.unsplash.com/photo-1518709368305-6f8151246f40?q=80&w=800&auto=format&fit=crop",

@@ -2,7 +2,7 @@ export const ro = {
   nav: {
     about: "Despre",
     products: "Produse",
-    causes: "Scop",
+    purposes: "Scop",
     community: "Comunitate",
     contact: "Contact",
     blog: "Jurnal",
@@ -87,8 +87,10 @@ export const ro = {
     contact: "Contact",
     location: "Locație",
     address: "București, România",
+    privacy: "Politica de Confidențialitate",
+    terms: "Termeni și Condiții",
   },
-  causes: {
+  purposes: {
     title: "Globuri cu Scop",
     subtitle: "Fiecare achiziție sprijină o cauză nobilă. Împreună, putem face sărbătorile mai luminoase pentru toți.",
     viewWebsite: "Site Web",

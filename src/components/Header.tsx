@@ -63,12 +63,11 @@ export default function Header({ t, currentLang = "en", pathname = "" }: Props) 
         </a>
 
         <nav className="hidden md:flex gap-8">
-          <a href={aboutPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.about}</a>
           <a href={`${homePath}#products`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.products}</a>
-          <a href={`${homePath}#causes`} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.causes}</a>
+          <a href={aboutPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.about}</a>
+          <a href={eventsPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.events}</a>
           <a href={communityPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.community}</a>
           <a href={blogPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.blog}</a>
-          <a href={eventsPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.events}</a>
           <a href={contactPath} className="text-sm font-medium text-gray-600 hover:text-christmas-red transition-colors">{t.nav.contact}</a>
         </nav>
 

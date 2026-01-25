@@ -18,14 +18,13 @@ export default function Footer({ t, currentLang = "en" }: Props) {
 
   const sitemap = [
     { label: t.nav.about, href: aboutPath },
-    { label: t.nav.blog, href: blogPath },
-    { label: t.nav.community, href: communityPath },
     { label: t.nav.events, href: eventsPath },
+    { label: t.nav.community, href: communityPath },
+    { label: t.nav.blog, href: blogPath },
   ];
 
   const infoLinks = [
     { label: t.nav.products, href: `${homePath}#products` },
-    { label: t.nav.causes, href: `${homePath}#causes` },
     { label: t.nav.contact, href: contactPath },
   ];
 
@@ -121,8 +120,8 @@ export default function Footer({ t, currentLang = "en" }: Props) {
             >
               {t.cookies.settings}
             </button>
-            <a href="#" className="hover:text-christmas-red transition-colors font-light">Privacy Policy</a>
-            <a href="#" className="hover:text-christmas-red transition-colors font-light">Terms of Service</a>
+            <a href="#" className="hover:text-christmas-red transition-colors font-light">{t.footer.privacy}</a>
+            <a href="#" className="hover:text-christmas-red transition-colors font-light">{t.footer.terms}</a>
           </div>
         </div>
       </div>
