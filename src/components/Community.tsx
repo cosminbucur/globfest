@@ -23,9 +23,9 @@ const images = [
     title: "Gifts wrapped in Joy"
   },
   {
-    url: "https://images.unsplash.com/photo-1482115697111-5323d2400e93?q=80&w=1200&auto=format&fit=crop",
-    alt: "Winter Magic",
-    title: "Winter Wonderland"
+    url: "/images/events/2023/2023-people.png",
+    alt: "Biserica Sf. Dumitru Posta",
+    title: "Globfest 2023"
   },
   {
     url: "https://images.unsplash.com/photo-1544208062-7360bf0b377b?q=80&w=800&auto=format&fit=crop",
@@ -120,6 +120,7 @@ const videos = [
 const IMAGES_PER_PAGE = 8;
 
 export default function Community({ t }: any) {
+  const base = import.meta.env.BASE_URL;
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState<any>(null);
 
@@ -179,7 +180,7 @@ export default function Community({ t }: any) {
               onClick={() => setSelectedImage(image)}
             >
               <img 
-                src={image.url} 
+                src={image.url.startsWith('http') ? image.url : `${base}${image.url.startsWith('/') ? image.url.slice(1) : image.url}`} 
                 alt={image.alt} 
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -365,7 +366,7 @@ export default function Community({ t }: any) {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={selectedImage.url} 
+                src={selectedImage.url.startsWith('http') ? selectedImage.url : `${base}${selectedImage.url.startsWith('/') ? selectedImage.url.slice(1) : selectedImage.url}`} 
                 alt={selectedImage.alt} 
                 className="w-full h-auto max-h-[80vh] object-contain rounded-2xl shadow-2xl shadow-white/5"
               />

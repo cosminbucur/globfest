@@ -53,9 +53,9 @@ export default function AboutPage({ t, lang = "en" }: any) {
               {t.about.storyTitle}
             </h2>
             <div className="w-12 h-1 bg-christmas-red mb-8"></div>
-            <p className="text-gray-500 font-medium">
-              Established 2012 <br />
-              Bucharest, Romania
+            <p className="text-gray-500 font-medium whitespace-pre-line">
+              {t.about.established} <br />
+              {t.about.location}
             </p>
           </motion.div>
 
@@ -64,13 +64,30 @@ export default function AboutPage({ t, lang = "en" }: any) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="md:col-span-8 space-y-8"
+            className="md:col-span-8 space-y-6"
           >
-            {t.about.storyContent.split('\n\n').map((paragraph: string, index: number) => (
-              <p key={index} className="text-lg text-gray-700 leading-relaxed first-letter:text-4xl first-letter:font-bold first-letter:text-christmas-red first-letter:mr-1 first-letter:float-left">
-                {paragraph}
-              </p>
-            ))}
+            {t.about.storyContent.split('\n\n').map((block: string, index: number) => {
+              if (block.trim().startsWith('-')) {
+                const items = block.trim().split('\n').map(item => item.replace(/^- /, ''));
+                return (
+                  <ul key={index} className="space-y-3 my-6">
+                    {items.map((item, i) => (
+                      <li key={i} className="flex items-start gap-4 text-lg text-gray-700">
+                        <span className="flex-shrink-0 w-6 h-6 bg-christmas-red/10 rounded-full flex items-center justify-center text-christmas-red text-sm">
+                          ✨
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+              return (
+                <p key={index} className="text-lg text-gray-700 leading-relaxed">
+                  {block}
+                </p>
+              );
+            })}
           </motion.div>
         </div>
 

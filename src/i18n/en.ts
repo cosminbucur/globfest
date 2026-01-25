@@ -15,12 +15,13 @@ export const en = {
     cta: "Discover the Collection",
   },
   about: {
-    title: "Crafted by Hand, Inspired by Tradition",
-    subtitle:
-      "Every bauble is painted individually, making each piece truly one of a kind.",
+    title: "About GlobFest",
+    subtitle: "Art, friendship, and generosity under one roof.",
     cta: "Learn More",
     storyTitle: "Our Story",
-    storyContent: "At Globfest, our journey began with a simple belief: that the ornaments we hang on our trees should be as unique as the memories we make during the holiday season. What started as a small passion project in a home workshop has blossomed into a community dedicated to preserving the artisanal craft of hand-painting glass ornaments.\n\nEvery single bauble in our collection is a labor of love. We don't believe in mass production; instead, we celebrate the slight imperfections and variations that come from a human hand holding a brush. Our artists spend hours on each piece, drawing inspiration from both timeless Christmas traditions and the subtle beauty of the natural world.\n\nBut Globfest is about more than just decoration. We founded this project with a mission to give back. That's why a portion of every sale goes directly to supporting causes that make a real difference in people's lives—from local community centers to organizations helping children with special needs. We believe that true holiday magic is found in the act of giving and sharing warmth with others.\n\nWhen you choose a Globfest bauble, you're not just buying an ornament; you're supporting an artist, contributing to a meaningful cause, and bringing a piece of genuine craftsmanship into your home. We are honored to be a part of your family's festive traditions and look forward to adding a touch of hand-painted magic to your celebrations for many years to come.",
+    storyContent: "In short, at GlobFest, we gather with friends to paint Christmas baubles over a cup of tea or mulled wine, which we then donate to be sold for charitable causes.\n\nWhile we focus on quality over quantity, don't panic if you think you lack artistic talent! We will surely find something easy to paint that is charming and perfectly 'instagrammable'. 😊 And if you're not ready to pick up a brush just yet, there are many other interesting ways you can contribute to the success of our events.\n\nOur Objectives:\n\n- To enjoy each other's company and have a great time\n- To discover hidden talents and challenge our creativity\n- To build a wonderful community based on soul-to-soul connections and friendship\n- To create an environment filled with kindness and understanding\n- To beautify the world through art and culture\n- To create unique and meaningful gifts for loved ones\n- To bring a little light into the world and perform a good deed\n\nIf you identify with even one of these goals, we would love for you to join the GlobFest family.\n\nLooking ahead, we aim to expand these events nationwide so we can support even more charitable causes. Everyone deserves a memorable Christmas—not one defined by scarcity, but by abundance… an abundance of friends, love, and gifts. ❤️",
+    established: "Established 2012",
+    location: "Bucharest, Romania",
     visitTitle: "Want to see the magic in person?",
     visitSubtitle: "Our studio is a place of creativity and festive spirit. We'd love to share our process with you.",
     acknowledgementsTitle: "Special Acknowledgements",
