@@ -303,4 +303,11 @@ export const en = {
       }
     ]
   },
+  cookies: {
+    title: "We Value Your Privacy",
+    description: "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    acceptAll: "Accept All",
+    rejectAll: "Reject All",
+    settings: "Cookie Settings",
+  },
 };

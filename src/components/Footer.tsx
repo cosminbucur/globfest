@@ -115,6 +115,12 @@ export default function Footer({ t, currentLang = "en" }: Props) {
             &copy; 2012 - {currentYear} Andreea Ardelean. {t?.footer?.rights || 'All rights reserved.'}
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('show-cookie-banner'))}
+              className="hover:text-christmas-red transition-colors font-light cursor-pointer"
+            >
+              {t.cookies.settings}
+            </button>
             <a href="#" className="hover:text-christmas-red transition-colors font-light">Privacy Policy</a>
             <a href="#" className="hover:text-christmas-red transition-colors font-light">Terms of Service</a>
           </div>

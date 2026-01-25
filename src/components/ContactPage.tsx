@@ -59,7 +59,7 @@ export default function ContactPage({ t }: any) {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-1">{t.contact.info.email}</h3>
-                  <a href="mailto:hello@globfest.ro" className="text-gray-600 hover:text-christmas-red transition-colors text-lg">hello@globfest.ro</a>
+                  <a href="mailto:contact@globfest.ro" className="text-gray-600 hover:text-christmas-red transition-colors text-lg">contact@globfest.ro</a>
                 </div>
               </div>
 

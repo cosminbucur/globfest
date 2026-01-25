@@ -304,4 +304,11 @@ export const ro = {
       }
     ]
   },
+  cookies: {
+    title: "Respectăm Confidențialitatea",
+    description: "Folosim cookie-uri pentru a vă îmbunătăți experiența de navigare, pentru a vă oferi conținut personalizat și pentru a ne analiza traficul. Făcând clic pe „Acceptă toate”, sunteți de acord cu utilizarea modulelor cookie.",
+    acceptAll: "Acceptă toate",
+    rejectAll: "Refuză tot",
+    settings: "Setări Cookie",
+  },
 };
